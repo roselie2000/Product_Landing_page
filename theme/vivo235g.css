@@ -1,0 +1,68 @@
+*body{
+    background-color: rgb(219, 209, 209);
+}
+
+/* Navigation Bar */
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+nav li{
+    float: left;
+}
+nav li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #e8e7e1;
+    color: bluea; 
+}
+.Search{
+    float:right;
+    padding: 10px;
+    margin-right: 150px;
+}
+
+/* Footer */
+
+footer{
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    overflow: hidden;
+    background-color: #c5bebe;
+}
+footer li{
+    float: left;
+}
+footer li a{
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+.MyFooterdiv{
+    background-color: rgb(240, 232, 232);
+    margin: auto;
+    padding-top: 20px;
+}
+.MyFooterdiv aside{
+    max-width: 25%;
+}
+.right{
+    flex: 75%;
+}
+.MyFooterdiv li{
+    padding: 10px;
+}

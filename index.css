@@ -1,0 +1,212 @@
+*body{
+    background-color: rgb(219, 209, 209);
+}
+
+
+/* Navigation bar */
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+nav li{
+    float: left;
+}
+nav li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #e8e7e1;
+    color: bluea; 
+}
+.Search{
+    float:right;
+    padding: 10px;
+    margin-right: 150px;
+}
+
+/* Slide Show */
+
+.responsive{
+    float: left;
+    border: 2px;
+    width: auto;
+}
+div.gallery{
+    border: 2px;
+    border-color: antiquewhite;
+    float: left;
+    padding: 25px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+* {box-sizing: border-box;}
+
+/* New Products */
+
+.row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    border: 2px;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }  
+.content:hover{
+    text-decoration: underline;
+}
+.content img:hover{
+    opacity: .5;
+}
+
+/* New Accessories */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 75%;
+  padding: 25px;
+  margin: auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.overlay {
+  position: relative; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* Footer */
+
+footer{
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    overflow: hidden;
+    background-color: #c5bebe;
+}
+footer li{
+    float: left;
+}
+footer li a{
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+.MyFooterdiv{
+    background-color: rgb(240, 232, 232);
+    margin: auto;
+    padding-top: 20px;
+}
+.MyFooterdiv aside{
+    max-width: 25%;
+}
+.right{
+    flex: 75%;
+}
+.MyFooterdiv li{
+    padding: 10px;
+}

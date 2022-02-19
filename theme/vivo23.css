@@ -1,0 +1,149 @@
+*body{
+    background-color: rgb(219, 209, 209);
+}
+
+/* Navigation Bar */
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+nav li{
+    float: left;
+}
+nav li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #e8e7e1;
+    color: bluea; 
+}
+.Search{
+    float:right;
+    padding: 10px;
+    margin-right: 150px;
+}
+
+/* Main */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+td {
+    text-align: left;
+    padding: 16px;
+}
+  
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+caption{
+    float: left;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Footer */
+
+footer{
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    overflow: hidden;
+    background-color: #c5bebe;
+}
+footer li{
+    float: left;
+}
+footer li a{
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+.MyFooterdiv{
+    background-color: rgb(240, 232, 232);
+    margin: auto;
+    padding-top: 20px;
+}
+.MyFooterdiv aside{
+    max-width: 25%;
+}
+.right{
+    flex: 75%;
+}
+.MyFooterdiv li{
+    padding: 10px;
+}

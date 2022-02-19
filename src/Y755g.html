@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivo 23 Pro</title>
-    <link rel="stylesheet" href="../index.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../theme/vivo23.css">
 </head>
 <body>
     <nav>
@@ -16,10 +16,75 @@
         <li><a href="https://www.example.com"><b>E-Store</b></a></li>
         <li><a href="https://www.example.com"><b>Retail-Store</b></a></li>
         <li><a href="https://www.example.com"><b>Support</b></a></li>
+        <form action="http://www.google.com/search" method="get">
+            <div class="Search">
+                <input autocomplete="off" name="q" placeholder="type text here" type="search">
+                <input type="image" src="../images/search.png" alt="Search" height="30" width="30">
+            </div>
+        </form>
         <div class="Search">
-                <img src="../images/search.png" alt="Search" height="25" width="25">
-        </div>
+        <a href="../src/login.html" target="blank">
+            <img src="../images/login.png" alt="login" height="50" width="50">
+        </a></div>
     </nav>
+
+    <!-- Main -->
+
+<main>
+
+    <img src="../images/VIVOy75.png" alt="Vivo T1 5G" height="600" width="100%" >
+    
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="../images/black23pro.png" style="width:500" class="center">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="../images/vivo y75.jfif" style="width:500" class="center">
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+            </div> 
+<h1><b>Basic Parameters</b></h1>
+    <table>
+        <tr>
+            <td>Dimensions:</td>
+            <td>164.00 × 75.84 × 8.25mm</td>
+        </tr>
+        <tr>
+            <td>RAM</td><td>8GB + 4GB</td>
+        </tr>
+        <tr>
+            <td>ROM</td><td>Expandable to 1TB</td>
+        </tr>
+        <tr>
+            <td>Battery</td><td>5000mAh</td>
+        </tr>
+        <tr>
+            <td>Charging</td><td>18W</td>
+        </tr>
+        <tr>
+            <td>OS</td><td>Funtouch OS 12.0</td>
+        </tr>
+        <tr>
+            <td>Processor</td><td>Dimensity 700</td>
+        </tr>
+        <tr>
+            <td>Sreen</td><td>16.71 cm (6.58- inch)</td>
+        </tr>
+        <tr>
+            <td>Camera</td><td>Front 16MP / Rear 50MP + 2MP + 2MP</td>
+        </tr>
+    </table>
+            
+</main>
+
     
 <!-- Footer -->
 
@@ -52,10 +117,9 @@
                 <td style="padding: 10px;">
                     <ul style="list-style-type: none;">
                         <h2>Follow Us</h2>
-                        <li><img src="../images/mail.png" height="50" width="50"></li>
-                        <li><img src="../images/fb.png" height="50" width="50"></li>
-                        <li><img src="../images/insta.png" height="50" width="50"></li>
-                        <li><img src="../images/twitter.png" height="50" width="50"></li>
+                        <li><a href="#" class="fa fa-facebook"></a>Facebook</li>
+                        <li><a href="#" class="fa fa-google"></a>Gmail</li>
+                        <li><a href="#" class="fa fa-twitter"></a>Twitter</li>
                     </ul>
                 </td>
             </tr>
@@ -70,6 +134,28 @@
     </footer>
 </div>
 
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </body>
 </html>

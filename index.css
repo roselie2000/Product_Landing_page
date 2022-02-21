@@ -34,6 +34,53 @@ li a:hover {
     margin-right: 50px;
 }
 
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 200px;
+  right: 300px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -209,33 +256,40 @@ div.gallery{
 /* Footer */
 
 footer{
-    list-style-type: none;
-    margin: 0;
-    padding: 2px;
-    overflow: hidden;
-    background-color: #c5bebe;
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  overflow: hidden;
+  background-color: #1d1c1c;
+  color: white;
 }
 footer li{
-    float: left;
+  float: left;
 }
 footer li a{
-    display: inline;
-    color: black;
-    text-align: center;
-    padding: 10px 14px;
-    text-decoration: none;
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+
+footer li a:hover{
+  background-color: #717171;
+  color: rgb(247, 241, 231);
 }
 .MyFooterdiv{
-    background-color: rgb(240, 232, 232);
-    margin: auto;
-    padding-top: 20px;
+  background-color: rgb(34, 30, 30);
+  margin: auto;
+  padding-top: 20px;
+  color: white;
 }
-.MyFooterdiv aside{
-    max-width: 25%;
-}
-.right{
-    flex: 75%;
-}
+
 .MyFooterdiv li{
-    padding: 10px;
+  padding: 10px;
 }
+
+.MyFooterdiv a{
+  color: white;
+}
+
